@@ -41,7 +41,7 @@ app.post("/employees", async (req, res) => {
   }
 });
 
-app.get("/employees", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const employees = await Employee.find();
     res.json(employees);
